@@ -1,6 +1,6 @@
 
 import './App.css';
-import IdCard from './components/IdCard/IdCard'
+/* import IdCard from './components/IdCard/IdCard'
 import Greetings from './components/Greetings/Greetings';
 import Random from './components/Random/Random';
 import BoxColor from './components/BoxColor/BoxColor';
@@ -13,11 +13,15 @@ import DriverCard from './components/DriverCard/DriverCard';
 import LikeButton from './components/LikeButton/LikeButton';
 import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
+import Toggle from './components/Toggle/Toggle';
+import NumbersTable from './components/NumberTable/NumbersTable';
+import Facebook from './components/Facebook/Facebook'; */
+import SignupPage from './components/SignupPage/SignupPage';
 
 function App() {
   return (
     <div className="App">
-      <IdCard
+      {/* <IdCard
         lastName='Doe'
         firstName='John'
         gender='male'
@@ -120,6 +124,14 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+
+      <Toggle />
+
+      <NumbersTable limit={12}/>
+
+      <Facebook /> */}
+
+      <SignupPage />
 
     </div>
   );
