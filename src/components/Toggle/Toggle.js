@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development";
+import { useState } from 'react'
 
 
 function Toggle() {
@@ -6,21 +6,20 @@ function Toggle() {
     const [theme, setTheme] = useState('light')
 
     const toggleTheme = event => {
-        console.log(event.target)
         setTheme(event.target.value)
     }
 
-    const bg = {background: theme}
+    const bg = { background: theme }
 
-    return ( 
+    return (
         <div className="theme" style={bg}>
-            <select onChange={ toggleTheme }>
+            <select onChange={toggleTheme}>
                 <option value='red'> red </option>
                 <option value='black'> Dark </option>
                 <option value='blue'> blue </option>
             </select>
         </div>
-     );
+    );
 }
 
 export default Toggle;

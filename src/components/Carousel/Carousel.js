@@ -1,32 +1,35 @@
 import { useState } from 'react';
-import './Carousel.css'
+
 
 function Carousel(props) {
 
     const images = props.images
 
-    const [display, setDisplay] = useState(0);
-    
-    const handleLeft = () => {
-        if (display === 0) {
-            return
+    const [index, setIndex] = useState(0);
+
+    const handleRight = () => {
+        if (index < images.length - 1) {
+            setIndex(index + 1)
         } else {
-            setDisplay(display - 1)
+            setIndex(0)
         }
     }
-    const handleRight = () => {
-        if (display < images.length - 1) {
-            setDisplay(display + 1)
-        } else return
+
+    const handleLeft = () => {
+        if (index === 0) {
+            setIndex(images.length - 1)
+        } else {
+            setIndex(index - 1)
+        }
     }
 
-    return ( 
+    return (
         <div>
             <button onClick={handleLeft}>Left</button>
-            <img src={images[display]} alt="pessoa aleatória" />
+            <img src={images[index]} alt="pessoa aleatória" />
             <button onClick={handleRight}>Right</button>
         </div>
-     );
+    );
 }
 
 export default Carousel;

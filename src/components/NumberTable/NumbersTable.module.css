@@ -4,13 +4,13 @@
   height: 100px;
   align-items: center;
   justify-content: center;
-    font-weight: bold;
-    border: 1px solid black;
+  font-weight: bold;
+  border: 1px solid black;
 }
 
 .table {
   display: flex;
   flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }

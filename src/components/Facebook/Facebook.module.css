@@ -1,0 +1,28 @@
+
+
+.facebook {
+    display: flex;
+    border: 1px solid black;
+    width: 600px;
+    flex-direction: row;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info p {
+    margin: 5px
+}
+
+img {
+    height: 200px;
+}
+
+.select {
+    display: flex;
+    border: 1px solid black;
+    width: 600px;
+    background-color: lightskyblue;
+}

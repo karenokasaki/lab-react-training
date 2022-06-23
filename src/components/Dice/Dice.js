@@ -6,7 +6,7 @@ import dice5 from '../../assets/images/dice5.png'
 import dice6 from '../../assets/images/dice6.png'
 import diceZero from '../../assets/images/dice-empty.png'
 
-import './Dice.css'
+import style from './Dice.module.css'
 import { useState } from 'react'
 
 function Dice() {
@@ -21,11 +21,11 @@ function Dice() {
         setDice(diceZero)
     }
 
-    return ( 
-        <div className='dice'>
+    return (
+        <div className={style.dice}>
             <img onClick={changeDice} src={dice} alt="dice" />
         </div>
-     );
+    );
 }
 
 export default Dice;

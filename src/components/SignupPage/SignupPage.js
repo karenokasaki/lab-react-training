@@ -39,7 +39,7 @@ function SignupPage() {
                     <option value='de'>de</option>
                     <option value='fr'>fr</option>
                 </select>
-                <button>Sign Up</button>
+                <button onClick={(e) => {e.preventDefault()} }>Sign Up</button>
             </form>
             <div>
                 <div>

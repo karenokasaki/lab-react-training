@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 
-function ClickablePicture(props){
+function ClickablePicture(props) {
     //definir o state
     const [img, setImg] = useState(props.img)
 

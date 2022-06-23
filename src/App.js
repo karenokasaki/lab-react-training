@@ -1,6 +1,6 @@
 
 import './App.css';
-/* import IdCard from './components/IdCard/IdCard'
+import IdCard from './components/IdCard/IdCard'
 import Greetings from './components/Greetings/Greetings';
 import Random from './components/Random/Random';
 import BoxColor from './components/BoxColor/BoxColor';
@@ -15,13 +15,19 @@ import Dice from './components/Dice/Dice';
 import Carousel from './components/Carousel/Carousel';
 import Toggle from './components/Toggle/Toggle';
 import NumbersTable from './components/NumberTable/NumbersTable';
-import Facebook from './components/Facebook/Facebook'; */
+import Facebook from './components/Facebook/Facebook';
+import MovieList from './components/MovieList/MovieList';
 import SignupPage from './components/SignupPage/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <IdCard
+
+      <MovieList />
+      <hr></hr>
+      <IdCard
         lastName='Doe'
         firstName='John'
         gender='male'
@@ -37,15 +43,23 @@ function App() {
         birth="1988-05-11"
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+      
+      <hr></hr>
 
-      <Greetings lang="de"></Greetings>
-      <Greetings lang="fr"></Greetings>
+      <Greetings lang="de">Hallo</Greetings>
+      <Greetings lang="fr">Bounjour</Greetings>
 
-      <Random min={1} max={6}/>
-      <Random min={1} max={100}/> 
+      <hr></hr>
+
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
+
+      <hr></hr>
 
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+
+      <hr></hr>
 
       <CreditCard
         type="Visa"
@@ -55,9 +69,9 @@ function App() {
         bank="BNP"
         owner="Maxence Bouret"
         bgColor="#11aa99"
-        color="white" 
+        color="white"
       />
-          
+
       <CreditCard
         type="Master Card"
         number="0123456789010995"
@@ -68,7 +82,7 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
-          
+
       <CreditCard
         type="Visa"
         number="0123456789016984"
@@ -77,20 +91,26 @@ function App() {
         bank="Name of the Bank"
         owner="Firstname Lastname"
         bgColor="#ddbb55"
-        color="white" 
+        color="white"
       />
+
+      <hr></hr>
 
       <Rating>0</Rating>
       <Rating>1.49</Rating>
-      <Rating>1.5</Rating> 
+      <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <hr></hr>
 
       <ClickablePicture
         img={photo}
         imgClicked={photoGlasses}
       />
+
+      <hr></hr>
 
       <DriverCard
         name="Travis Kalanick"
@@ -112,9 +132,15 @@ function App() {
         }}
       />
 
-      <LikeButton />  
-      
+      <hr></hr>
+
+      <LikeButton />
+
+      <hr></hr>
+
       <Dice />
+
+      <hr></hr>
 
       <Carousel
         images={[
@@ -125,16 +151,32 @@ function App() {
         ]}
       />
 
+      <hr></hr>
+
       <Toggle />
 
-      <NumbersTable limit={12}/>
+      <hr></hr>
 
-      <Facebook /> */}
+      <NumbersTable limit={12} />
+
+      <hr></hr>
+
+      <Facebook />
+
+      <hr></hr>
 
       <SignupPage />
 
+      <hr></hr>
+
+      <RGBColorPicker />
+
     </div>
-  );
+  )
 }
+
+
+
+
 
 export default App;
