@@ -8,21 +8,16 @@ function LikeButton() {
 
     const handleLikes = () => {
         setLikes(likes + 1);
-    }
-
-    const handleColor = () => {
         const colors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red']
-        setColor(colors[Math.floor(Math.random() * colors.length)])
+        let randomNumber = Math.floor(Math.random() * colors.length)
+        setColor(colors[randomNumber])
     }
 
-    const handle = () => {
-        handleLikes()
-        handleColor()
-    }
+
 
     return (
         <div>
-            <button onClick={handle} style={{backgroundColor: `${color}`}}>{likes} Likes</button>
+            <button onClick={handleLikes} style={{backgroundColor: `${color}`}}>{likes} Likes</button>
         </div>
     );
 }

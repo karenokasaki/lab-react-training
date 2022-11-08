@@ -13,12 +13,9 @@ function RGBColorPicker() {
         b: 0
     })
 
-
     function handleChange(e) {
         setForm({ ...form, [e.target.name]: e.target.value })
     }
-
-
 
     const colorbox = { backgroundColor: `rgb(${form.r},${form.g},${form.b})` }
 

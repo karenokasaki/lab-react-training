@@ -2,17 +2,14 @@ import './DriverCard.css'
 import Rating from '../Rating/Rating'
 
 
-function DriverCard(props) {
-
-
-
+function DriverCard({name, img, rating, car}) {
 
     return ( 
         <div className='drivercard'>
-            <h2>{props.name}</h2>
-            <img src={props.img} alt="perfil" />
-            <Rating>{props.rating}</Rating>
-            <p>{props.car.model} {props.car.licensePlate}</p>
+            <h2>{name}</h2>
+            <img src={img} alt="perfil" />
+            <Rating>{rating}</Rating>
+            <p>{car.model} {car.licensePlate}</p>
         </div>
      );
 }

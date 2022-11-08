@@ -1,23 +1,14 @@
-
-import './Rating.css'
-
+import './Rating.css';
 
 function Rating(props) {
-
-  const numberOfStars = Math.round(props.children)
-
-  let star = '★'
-  let starEmpty = '☆'
-
-  let result = star.repeat(numberOfStars).padEnd(5, starEmpty)
+  const numberOfStars = Math.round(props.children);
+  let result = '★'.repeat(numberOfStars).padEnd(5, '☆');
 
   return (
     <>
       <p>{result}</p>
     </>
-  )
+  );
 }
 
-export default Rating
-
-
+export default Rating;
